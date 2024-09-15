@@ -4,57 +4,68 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> BrightBlog</title>
+    <title> Bubble Tea Society</title>
 </head>
 <body>
     <header>
-        <h1 id="heading">BrightBlog</h1>
+        <h1 id="heading">Bubble Tea Society</h1>
         <nav>
             <ul id="nav-ul">
                 <li>
                     <a href class="navbutton"> Home </a>
                 </li>
                 <li>
-                    <a href class="navbutton"> About Us </a>
+                    <a href class="navbutton"> About </a>
                 </li>
                 <li>
-                    <a href class="navbutton"> Contact </a>
+                    <a href class="navbutton"> Contact Us </a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <div>
+        <div id="grid-container">
             <article>
-                <header>
-                    <h2></h2>
-                    <h3></h3>
-                </header>
-                <main>
-                    <p>
-                        <blockquote>
-                            <cite></cite>
-                        </blockquote>
-                    </p>
-                </main>
-                <footer>
-                    <h2> Author </h2>
-                    <img src="https://placebear.com/100/100/" alt="A Picture of a Bear ">
-                    <h3> Date </h3>
-                    <a href="https://brightnetwork.co.uk" target="_blank">Author's Profile</a>
-    
-                </footer>
-            </article>
-            <hr>
-            <h2>Sign up for our newsletter!</h2>
-            <form action="" method="">
-                <label for="first_name">First Name:</label>
-                <input type="text" id="first_name" name="first_name" required>
                 
-                <br>
+                <div id="menu">
+                    <img src="https://placebear.com/100/100/" alt="Our Logo">
+                </div>
+                <div>
+                    <section id="main-content">
+                        <h1>Welcome to Bubble Tea Society, the first bubble tea society in London!</h1>
+                        <p>Our society brings all the bubble tea enthusiasts from all over the world to here at UCL!
+                            <br>
+                            Join our society!
+                            <br>
+                            <ul>
+                                <li>Making & meeting new friends through your love for bubble tea!</li>
+                                <li>Having bobalicious fun with a wide range of amazing social events including:</li>
+                        
+                                <ul style="padding-left: 30px;"> 
+                                    <li>DIY Bubble Tea Workshops</li>
+                                    <li>Bubble Tea Crawls</li>
+                                    <li>Picnics</li>
+                                    <li>Movie Nights</li>
+                                </ul> 
+
+                                <li>Trying new & refreshing bubble tea flavours!</li>
+                                <li>Discounts from various popular bubble tea shops in London for our members!</li>
+                                <li>£5 standard membership for all of the above! </li>
+                                <li>Like the sound of our society? …then Bubble Tea society is the perfect community for you to join!</li>
+                            </ul>    
     
-                <label for="last_name">Last Name:</label>
-                <input type="text" id="last_name" name="last_name" required>
+                            We warmly welcome you to our society!
+                            <br>
+                            Don’t hesitate to contact us through our email and Instagram!</p>
+                    </section>
+                </div>
+            </article>
+            
+        <h2>Sign up to our membership!</h2>
+        <hr class="custom-hr"> 
+            <form action="" method="">
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="full_name" required>
                 
                 <br>
     
@@ -62,61 +73,42 @@
                 <input type="email" id="email" name="email" required>
                 
                 <br>
-                
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                
-                <br>
         
-                <label for="favourite animal">Favourite Animal:</label>
-                <input type="radio" id="dog" name="favoruite animal" value="dog">
-                <label for="dog">Dog</label>
-                <input type="radio" id="cat" name="favoruite animal" value="cat">
-                <label for="cat">Cat</label>
-                <input type="radio" id="hedgehog" name="favoruite animal" value="hedgehog">
-                <label for="hedgehog">Hedgehog</label>
+                <label for="favourite_bubble_tea">Favourite Type of Bubble Tea:</label>
+                <input type="radio" id="milk_tea" name="favourite_bubble_tea" value="milk_tea" required>
+                <label for="milk_tea">Milk Tea</label>
+                <input type="radio" id="fruit_tea" name="favourite_bubble_tea" value="fruit_tea" required>
+                <label for="fruit_tea">Fruit Tea</label>
                 
                 <br>
                
-                <label for="country">Country:</label>
-                <select name="country" id="country">
-                    <option value="england">England</option>
-                    <option value="scotland">Scotland</option>
-                    <option value="wales">Wales</option>
-                    <option value="northern_ireland">Northern Ireland</option>
+                <label for="topping">Topping:</label>
+                <select name="topping" id="topping">
+                    <option value="tapioca_pearls">Tapioca Pearls</option>
+                    <option value="jelly">Jelly</option>
+                    <option value="popping_bubbles">Popping Bubbles</option>
+                    <option value="pudding">Pudding</option>
+                    <option value="red_bean">Red Bean</option>
                 </select>
                 <br>
     
-                <label for="bio">Biography</label>
-                <textarea name="bio" id="bio" cols="30" rows="5"></textarea>
-    
-                <input type="checkbox" id="subscribe" name="subscribe">
-                <label for="subscribe">Subscribe to our newsletter!></label>
-                
+                <label for="question">Ask your question here!</label>
+                <textarea name="question" id="question" cols="30" rows="1"></textarea>
+
                 <br>
     
-        
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Subscribe to our mailing list!</label>
+                
+                <br>
             </form>
-
         </div>
         <hr>
     </main>
     <footer>
-        <h2> BrightBlogSite</h2>
         <section>
             <nav>
                 <ul id="footer-ul">
-                    <div>
-                        <li>
-                            <a href = ""> Home </a>
-                        </li>
-                        <li>
-                            <a href = ""> About Us </a>
-                        </li>
-                        <li>
-                            <a href = ""> Contact </a>
-                        </li>
-                    </div>
                     <div>
                         <li>
                             <a href = ""> Home </a>
@@ -132,9 +124,6 @@
             </nav>
         </section>
     </footer>
-    
-<aside>
-    
-</aside>
+    <h5>&copy 2024 HZ </h5>
 </body>
 </html>

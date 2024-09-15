@@ -1,9 +1,8 @@
 #heading {
     margin: 0px;
     padding: 8px;  
-    font-family: "Fredoka-One";
-    <!--box-shadow: 10px 10px 15px 5px white;-->
-    width: 20%;
+    font-family: "Fredoka", sans-serif;
+
 }
 
 body > header {
@@ -12,7 +11,7 @@ body > header {
     display: flex;
     height: 12vh;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 
@@ -46,7 +45,7 @@ body {
 }
 
 body > main > article {
-    width: 70%;
+    width: 100%;
     margin: auto;
 }
 
@@ -74,6 +73,9 @@ ul {
 #footer-ul{
     display: flex;
     list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 #footer-ul > div > li {
@@ -85,3 +87,31 @@ ul {
     text-decoration: none;
     color: white;
 }
+
+#menu{
+    padding: 32px;
+    background-color: antiquewhite;
+    grid-area: menu;
+}
+
+#main-content{
+    padding: 32px;
+    background-color: whitesmoke;
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "menu"
+    "main"
+    "footer"
+    ;
+    grid-template-rows: 3fr 7fr;
+}
+
